@@ -5,7 +5,7 @@ var songs = ["Not Irl","Jungle Fury" , "Walking On The Moon", "Fight"  ];
 var image_links = ["https://pbs.twimg.com/media/DwgEzEaVAAApULc.jpg"];
 var artists = ["Modestep","RIOT","Infected Mushroom","Tokyo Machine" ];
 var lengths = ["4:12"];
-var links = ["https://www.youtube.com/watch?v=SzQKBrU1YWM"];
+var links = ["https://www.youtube.com/watch?v=SzQKBrU1YWM" , "test"];
 // BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
 // Make sure they match the same order as your array above
 
@@ -15,13 +15,13 @@ function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
 for (var i = 0; i < songs.length; i++){
     
- $("#songs").append(songs[i]);
+ $("#songs").append('<p>' + songs[i] + '</p>');
     
     
 }
 for (var i = 0; i < artists.length; i++){
     
- $("#artists").append(artists[i]);
+ $("#artists").append('<p>' + artists[i] + '</p>');
     
     
 }
@@ -33,7 +33,12 @@ console.log(image_links[i]);
 }
 for (var i = 0; i < lengths.length; i++){
     
- $("#lengths").append(lengths[i]);
+ $("#lengths").append('<p>' + lengths[i] + '</p>');
+}
+
+for (var i = 0; i < links.length; i++){
+    
+ $("#links").append('<a  href="' + links[i] + '" target="_blank">' + 'Listen' + '</a>');
 }
 
 
@@ -41,6 +46,10 @@ for (var i = 0; i < lengths.length; i++){
 
 function emptySongInfo(){
     $("#songs").empty();
+    $("#artists").empty();
+    $("#images").empty();
+    $("#lengths").empty();
+    $("#links").empty();
     // Use jQuery to empty all of the remaining divs
 
 
