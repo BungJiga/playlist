@@ -1,7 +1,11 @@
 /* global $ */
 
 // BELOW Update the songs array with four of your favorites songs.
-var songs = [];
+var songs = ["Not Irl","Jungle Fury" , "Walking On The Moon", "Fight"  ];
+var image_links = ["https://pbs.twimg.com/media/DwgEzEaVAAApULc.jpg"];
+var artists = ["Modestep" , ];
+var lengths = ["4:12" ];
+var links = ["https://www.youtube.com/watch?v=SzQKBrU1YWM"];
 // BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
 // Make sure they match the same order as your array above
 
